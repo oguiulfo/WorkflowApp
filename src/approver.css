@@ -1,0 +1,36 @@
+.approver-select {
+  width: 100%;
+  height: 36px;
+  margin-top: 11px;
+  padding: 0 10px;
+  border: 1px solid #dfe7de;
+  border-radius: 5px;
+  color: #35433a;
+  background: #fff;
+  font-size: 10px;
+}
+
+.approver-select:focus {
+  border-color: #83ae92;
+  box-shadow: 0 0 0 2px #e7f2e8;
+  outline: 0;
+}
+
+@media (max-width: 800px) {
+  .approver-field { grid-column: 1; grid-row: 1; }
+  .amount-field { grid-column: 1; grid-row: 2; }
+  .delegate-group { grid-column: 2; grid-row: 1; }
+  .response-group { grid-column: 1; grid-row: 3; }
+  .inspector-note { grid-column: 2; grid-row: 3; }
+}
+
+@media (max-width: 560px) {
+  .approver-field,
+  .amount-field,
+  .delegate-group,
+  .response-group,
+  .inspector-note {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

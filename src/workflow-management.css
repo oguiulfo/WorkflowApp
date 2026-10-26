@@ -1,0 +1,40 @@
+.library-heading { margin-bottom: 23px; }
+.library-panel { overflow: hidden; border: 1px solid #e5eae3; border-radius: 7px; background: #fff; }
+.library-panel-heading { min-height: 61px; display: flex; align-items: center; padding: 11px 17px; border-bottom: 1px solid #edf0eb; }
+.library-panel-heading h2 { color: #33443a; font-family: Manrope,sans-serif; font-size: 12px; font-weight: 700; }
+.library-panel-heading p { margin-top: 4px; color: #8a948d; font-size: 9px; }
+.workflow-list-item { min-height: 76px; display: flex; align-items: center; gap: 11px; padding: 12px 15px; border-bottom: 1px solid #eef1ed; }
+.workflow-list-item:last-child { border-bottom: 0; }
+.workflow-list-item:hover { background: #fcfdfa; }
+.workflow-list-icon { width: 34px; height: 34px; display: grid; flex: 0 0 34px; place-items: center; border-radius: 6px; color: #36755a; background: #eaf3eb; }
+.workflow-list-copy { min-width: 0; flex: 1; display: grid; gap: 4px; }
+.workflow-list-copy>strong { overflow: hidden; color: #394a3f; font-size: 10px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.workflow-list-copy>small { overflow: hidden; color: #87928a; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.workflow-list-copy>span { color: #8a958d; font-size: 8px; }
+.workflow-list-copy>span b { padding: 0 3px; color: #c0c8c0; font-weight: 400; }
+.workflow-list-status { padding: 4px 7px; border: 1px solid #e9ece7; border-radius: 4px; color: #79867c; background: #f7f8f6; font-size: 8px; }
+.workflow-list-status.active { border-color: #d4e7d7; color: #43805a; background: #eff7ef; }
+.workflow-list-status.paused { border-color: #eadfce; color: #9a7a4f; background: #faf5e9; }
+.workflow-open-button { width: 29px; height: 29px; display: grid; flex: 0 0 29px; place-items: center; border: 0; border-radius: 5px; color: #78877c; background: transparent; }
+.workflow-open-button:hover { color: #2d694e; background: #eef5ef; }
+.workflow-library-empty { min-height: 230px; display: grid; justify-items: center; align-content: center; gap: 8px; color: #7c8e81; }
+.workflow-library-empty>strong { color: #506055; font-size: 11px; }
+.workflow-library-empty>span { margin-bottom: 5px; color: #89948c; font-size: 9px; }
+.workflow-form-row,.properties-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.workflow-properties-panel { overflow: hidden; border: 1px solid #e5eae3; border-radius: 7px; background: #fff; }
+.workflow-properties-heading { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 17px 18px; border-bottom: 1px solid #edf0eb; }
+.workflow-properties-heading .eyebrow { margin-bottom: 8px; }
+.workflow-properties-heading h2 { color: #2d3d33; font-family: Manrope,sans-serif; font-size: 14px; font-weight: 700; }
+.workflow-properties-heading p { margin-top: 4px; color: #89938c; font-size: 9px; }
+.properties-autosave { display: flex; align-items: center; gap: 6px; color: #829087; font-size: 8px; white-space: nowrap; }
+.properties-autosave i { width: 6px; height: 6px; border-radius: 50%; background: #61a171; }
+.workflow-properties-form { width: min(100%,680px); display: grid; gap: 18px; padding: 20px 18px 22px; }
+.property-field { display: grid; gap: 7px; color: #4a594f; font-size: 9px; font-weight: 600; }
+.property-field input,.property-field textarea,.property-field select { width: 100%; min-height: 36px; padding: 8px 10px; border: 1px solid #dfe7de; border-radius: 5px; color: #38483d; background: #fff; font: 10px 'DM Sans',sans-serif; font-weight: 400; }
+.property-field textarea { resize: vertical; line-height: 1.5; }
+.property-field input:focus,.property-field textarea:focus,.property-field select:focus { border-color: #83ae92; box-shadow: 0 0 0 2px #e7f2e8; outline: 0; }
+.properties-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.properties-note { display: grid; gap: 4px; padding: 11px 12px; border: 1px solid #e6ecdf; border-radius: 5px; background: #f9faf4; }
+.properties-note strong { color: #59664d; font-size: 9px; }
+.properties-note span { color: #828c78; font-size: 8px; }
+@media(max-width:560px) { .library-heading>.button { align-self: flex-start; } .workflow-list-item { gap: 8px; padding: 11px 9px; } .workflow-list-icon { width: 29px; height: 29px; flex-basis: 29px; } .workflow-list-status { display: none; } .workflow-form-row,.properties-grid { grid-template-columns: 1fr; } .workflow-properties-heading { align-items: flex-start; flex-direction: column; padding: 14px; } .workflow-properties-form { padding: 15px 14px; } }
